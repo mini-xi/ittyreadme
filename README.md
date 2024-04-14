@@ -6,7 +6,7 @@
 기술스택, 활용툴 수정
 API 명세서
 프론트 쪽은 와이어프레임이랑 스토리보드 추가하면 됨.
-백엔드 쪽은 뭐 더 추가해야할지 물어볼 예정.(테스트케이스, 서버 관련 Docker, Kubernetes)
+백엔드 추가.(테스트케이스, 서버 관련 Docker, Kubernetes)(prometheus, grafana, redis, jenkins 추가)
 회고록
 
 jenkins나 github action -> ?
