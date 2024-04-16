@@ -153,8 +153,21 @@ npm run dev
 
 <details>
  <summary><b>ITTY Modeling</b></summary>
+ 
+ - 논리 모델링
+ 
+ <div align="center">
+   <img src="https://github.com/mini-xi/ittyreadme/blob/c9f23e4580f33b93936e89a2ce9c68715ab77a92/img/itty_%EB%85%BC%EB%A6%AC%EB%AA%A8%EB%8D%B8%EB%A7%81.png"/>
+ </div>
+<br>
+ 
+ - 물리모델링
 
-</details>
+ <div align="center">
+   <img src="https://github.com/mini-xi/ittyreadme/blob/c9f23e4580f33b93936e89a2ce9c68715ab77a92/img/itty_%EB%AC%BC%EB%A6%AC%EB%AA%A8%EB%8D%B8%EB%A7%81.png"/>
+ </div>
+ 
+ </details>
 
 ## 4. API 명세서
 <details>
