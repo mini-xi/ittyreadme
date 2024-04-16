@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=ITTY&fontSize=80" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=ITTY&fontSize=80&fontColor=ffffff" />
 <p align="center"></p>
 
 ###  팀명 : 1oT
