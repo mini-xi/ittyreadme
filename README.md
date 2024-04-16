@@ -341,7 +341,7 @@ kubectl apply -f prometheus/
 
 - redis 디렉토리 밖에서 위와 같은 명령어를 실행 하면 3개의 .yml 파일이 실행 됨
 
-### 5.3. 실행 확인
+<b> 5.3. 실행 확인</b><br>
 
 - 브라우저 환경에서 localhost:30090을 실행함.
 - targets에 들어가 jenkins, backend가 configmap에서 설정한 주소로 접근이 가능한지 확인함
