@@ -207,13 +207,13 @@ npm run dev
 - redis 디렉토리 생성
 - Kubernetes 실행을 위한 yml 파일 작성
     
-    [redis-configmap.yml](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/d790e287-62ce-4d9b-ae3f-f28af9a6f6f3/redis-configmap.yml)
+    [redis-configmap.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/redis-configmap.yml)
     
     - 애플리케이션 설정을 저장하는 데 사용되는 리소스
     
-    [redis-dep.yml](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/96c4085d-f476-4f13-858e-366ff84c9b9b/redis-dep.yml)
+    [redis-dep.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/redis-dep.yml)
     
-    [redis-svc.yml](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/9f0a4f2c-0d74-4de8-b7d3-e3ac9adb46ae/redis-svc.yml)
+    [redis-svc.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/redis-svc.yml)
     
     ```yaml
       externalIPs:
@@ -239,13 +239,13 @@ kubectl apply -f redis/
 
 <b> 4.1.1 Dockerfile 생성</b><br>
 
-[Dockerfile](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/1e1e2c22-be17-4650-8e04-3146d15abf17/Dockerfile.txt)
+[Dockerfile](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/Dockerfile.txt)
 
 - 해당 파일은 MariaDB 컨테이너 이미지를 사용하여 데이터베이스를 초기화하는 작업을 수행함.
 - 초기화 작업은 빌더 스테이지에서 수행되며, 그 결과로 초기화된 데이터베이스 디렉토리가 생성됨
 - 다음 초기화된 데이터베이스 디렉토리를 기본 MariaDB 이미지로 복사하여 최종 이미지를 생성
 
-[setup.sql](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/fd08e6ad-ce00-4dab-86d8-5189dce92662/setup.sql)
+[setup.sql](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/setup.sql)
 
 - 해당 파일은 itty Database DDL문으로 Docker 이미지 초기 세팅할 DB이다.
 
@@ -266,13 +266,13 @@ docker push {DB image name}
 - db 디렉토리 생성
 - Kubernetes 실행을 위한 yml 파일 작성
     
-    [itty-db-volume.yml](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/22356eae-7a81-43aa-9e0b-716725beaeb6/itty-db-volume.yml)
+    [itty-db-volume.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/itty-db-volume.yml)
     
     - 애플리케이션 설정을 저장하는 데 사용되는 리소스
     
-    [itty-db-deployment.yml](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/22122e29-fba3-4a09-8c3c-f69c974a14c4/itty-db-deployment.yml)
+    [itty-db-deployment.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/itty-db-deployment.yml)
     
-    [itty-db-service.yml](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/5d3b23ed-8c9f-4000-9dad-73a57a1fdd28/itty-db-service.yml)
+    [itty-db-service.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/itty-db-service.yml)
     
     ```yaml
       externalIPs:
@@ -304,7 +304,7 @@ kubectl apply -f db/
 - Prometheus 디렉토리 생성
 - Kubernetes 실행을 위한 yml 파일 작성
     
-    [prometheus-configmap.yml](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/215a6c75-daf5-4200-876e-4ad8d3b1e8c2/prometheus-configmap.yml)
+    [prometheus-configmap.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/prometheus-configmap.yml)
     
     - 현재 이 시스템에서는 Backend와 Jenkins Server 모니터링을 진행함.
     
@@ -326,9 +326,9 @@ kubectl apply -f db/
     - 해당 IP를 prometheus.static_configs.targes 쪽에 port 8888로 수정함.
     - jenkins 서버 모니터링을 위해 imac위에서 동작하고 있는 jenkins를 ngrok을 통해 주소를 Backend서버 targets 수정한것 처럼 수정한다.
     
-    [prometheus-service.yml](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/f059d7a0-20cd-4ab6-8e49-ddb3912d9f62/prometheus-service.yml)
+    [prometheus-service.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/prometheus-service.yml)
     
-    [prometheus-deployment.yml](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/7e2f0ac8-f7fa-44b8-aa90-f950ed8cb71c/prometheus-deployment.yml)
+    [prometheus-deployment.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/prometheus-deployment.yml)
     
     - service 파일에 다음과 같이 IP를 설정함
     - Backend Server에서 192.168.0.31:6379를 이용하여 서로 통신 가능 하게 적용
@@ -360,13 +360,13 @@ kubectl apply -f prometheus/
 - grafana 디렉토리 생성
 - Kubernetes 실행을 위한 yml 파일 작성
     
-    [grafana-volume.yml](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/533ce8f9-0547-441f-806f-3d95ac24e2e5/grafana-volume.yml)
+    [grafana-volume.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/grafana-volume.yml)
     
     - 애플리케이션 설정을 저장하는 데 사용되는 리소스
     
-    [grafana-deployment.yml](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/afc0d609-a4e7-49ea-a9ac-468bb89ca135/grafana-deployment.yml)
+    [grafana-deployment.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/grafana-deployment.yml)
     
-    [grafana-service.yml](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/b353d8d7-6ac3-48a5-9c7c-ac1a92312238/grafana-service.yml)
+    [grafana-service.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/grafana-service.yml)
     
 
 <b> 6.2. Kubernetes Redis 실행</b><br>
@@ -381,15 +381,9 @@ kubectl apply -f grafana/
 
 - localhost:30000으로 접속함.
 - Prometheus에서 데이터를 전송받기 위해 data source → prometheus 클릭
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/326c9ac7-3012-4df2-b249-dbfe5f822fe3/Untitled.png)
-
 - kubectl describe {prometheus pod 이름}을 통해 알아낸 ip주소를 작성한다.
     - http://{pod 주소}:9090
 - Dashboards 새성 imports를 통해 모니터링 대시보드를 생성 가능 함.
-    
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/c3221642-ab4f-41a3-be48-86b6535ae24e/Untitled.png)
-    
     - 19004 → Spring Boot 3.x Statistics
     - 12646 → Jenkins
 
