@@ -147,9 +147,7 @@ docker push eodud3196/backend_server
 <b> 1.7. manifest 파일 생성</b><br>
 
 - deployment 파일 생성
-    
-    [itty-project-deployment.yml]([https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/2c74ae88-ee53-493a-a24a-eec28a107c14/itty-project-deployment.yml](https://file.notion.so/f/f/c78cddc1-c25c-4915-ab0f-e94172746e8b/2c74ae88-ee53-493a-a24a-eec28a107c14/itty-project-deployment.yml?id=569bbf32-ac2b-4c46-935e-c94ca63d94c3&table=block&spaceId=c78cddc1-c25c-4915-ab0f-e94172746e8b&expirationTimestamp=1713398400000&signature=rMB13EJgDjqClAAxIyI8ri173zclBT1iR3OWzWmFkMA&downloadName=itty-project-deployment.yml))
-    
+
 
 - service 파일 생성
     
