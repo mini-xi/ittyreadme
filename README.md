@@ -66,7 +66,7 @@
 <hr>
 
 ## Architecture
-<img src="https://github.com/mini-xi/ittyreadme/blob/a3c73ff3e9f7b7600f0cee23a7f5cdbb2decda90/img/itty_architecture.png"/>
+<img src="https://github.com/mini-xi/ittyreadme/blob/0ca77d608026ada8e5645f3aed138c95a69ceb3d/img/architectureItty.png"/>
 
 ## Build Tutorial
 
