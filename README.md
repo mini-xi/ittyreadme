@@ -69,7 +69,8 @@
 <img src="https://github.com/mini-xi/ittyreadme/blob/0ca77d608026ada8e5645f3aed138c95a69ceb3d/img/architectureItty.png"/>
 <br>
 * Jasypt
-  : Java Simplified Encryption, 자바 애플리케이션에서 개발자가 데이터를 안전하게 암호화하고 복호화할 수 있도록 도와주는 라이브러리. 이를 사용함으로써 데이터베이스 내의 중요 정보, 환경 설정 파일의 민감한 데이터, 소스 코드 내에 포함된 비밀번호 같은 것들을 보호( ex) .yml )
+  
+*: Java Simplified Encryption, 자바 애플리케이션에서 개발자가 데이터를 안전하게 암호화하고 복호화할 수 있도록 도와주는 라이브러리. 이를 사용함으로써 데이터베이스 내의 중요 정보, 환경 설정 파일의 민감한 데이터, 소스 코드 내에 포함된 비밀번호 같은 것들을 보호( ex) .yml )*
 
 
 ## Build Tutorial
