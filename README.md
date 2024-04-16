@@ -56,6 +56,27 @@
 
 ## 5. Story Board
 
+<div align="center">
+<details>
+<summary><b>ITTY Story Board </b></summary>
+    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_001.png"/>
+    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_002.png"/>
+    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_003.png"/>
+    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_004.png"/>
+    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_005.png"/>
+    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_006.png"/>
+    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_007.png"/>
+    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_008.png"/>
+    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_009.png"/>
+    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_010.png"/>
+    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_011.png"/>
+    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_012.png"/>
+    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_013.png"/>
+</details>
+</div>
+
+## 📝 요구사항
+
 
 ## 6. 테스트 계획
 
