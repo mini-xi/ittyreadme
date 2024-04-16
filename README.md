@@ -23,7 +23,7 @@
 
 > &nbsp;ITTY는 "Integration of Technology To You"의 약자로, 사용자에게 최신 IT 정보와 기술을 제공하는 웹 서비스입니다.<br>&nbsp; 이 서비스는 논문 검색, 스터디 또는 프로젝트 참여, 경력 개발자와의 커뮤니케이션, 공모전 정보 제공 등 다양한 기능을 통합하여 ITTY 하나로 여러 요구를 충족시키는 것을 목표로 합니다.<br> &nbsp;웹사이트는 Vue, HTML, JavaScript를 이용한 프론트엔드와 Java를 사용한 백엔드로 구성되어 있으며, Intellij로 개발되었습니다.&nbsp;서버는 Docker와 Kubernetes를 통해 관리됩니다.&nbsp; 현재는 크롤링을 통해 최신 IT 정보를 수집해 제공하고 있으며, 향후 WebSocket을 이용한 실시간 채팅 및 쪽지 기능과 ElasticSearch를 활용한 검색 기능을 도입할 계획입니다.
 
-## 기술스택
+## ⚙️ 기술스택
 <div align="center">
 
 |SpringBoot|SpringSecurity|Vue|HTML|CSS|JavaScript|MariaDB|Spring Data JPA|Bootstrap|
@@ -35,7 +35,7 @@
 |<img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white">|<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=Kubernetes&logoColor=white">|<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white">|<img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=Redis&logoColor=white">|<img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=Grafana&logoColor=white">|<img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white">|<img src="https://img.shields.io/badge/ngrok-1F1E37?style=for-the-badge&logo=ngrok&logoColor=white">|<img src="https://img.shields.io/badge/JSON Web Tokens-000000?style=for-the-badge&logo=JSON Web Tokens&logoColor=white">|
 </div>
 
-## 개발도구
+## ⚙️ 개발도구
 <div align="center">
 
 |IntelliJ IDEA|Visual Studio|HeidiSQL|Figma|GitHub|Slcak|Jira|
@@ -65,7 +65,7 @@
 
 <hr>
 
-## Architecture
+## 📋 Architecture
 <img src="https://github.com/mini-xi/ittyreadme/blob/0ca77d608026ada8e5645f3aed138c95a69ceb3d/img/architectureItty.png"/>
 <br>
 <b>* Jasypt</b>
@@ -73,7 +73,7 @@
 *: Java Simplified Encryption, 자바 애플리케이션에서 개발자가 데이터를 안전하게 암호화하고 복호화할 수 있도록 도와주는 라이브러리. 이를 사용함으로써 데이터베이스 내의 중요 정보, 환경 설정 파일의 민감한 데이터, 소스 코드 내에 포함된 비밀번호 같은 것들을 보호( ex) .yml )*
 
 
-## Build Tutorial
+## ⚙️ Build Tutorial
 
 ### 1. Backend
 ### BackEnd Server를 Docker 컨테이너로 생성
@@ -131,7 +131,7 @@ npm run dev
 - 배포 받은 Vue 파일 실행 (Localhost:(포트번호) 로 지정)
 
 
-## Continueous Deployment
+## ⚙️ Continueous Deployment
 
 
 ## 2. 요구사항 명세서
@@ -212,7 +212,7 @@ npm run dev
 
 ## 8. 테스트
 
-## Docker / Kubernetes
+## ⚙️ Docker / Kubernetes
 
 <div align="center">
 
@@ -234,7 +234,7 @@ npm run dev
 
 </div>
 
-## Prometheus / Grafana
+## ⚙️ Prometheus / Grafana
 
 <div align="center">
 
