@@ -2,7 +2,7 @@
 <p align="center"></p>
 
 ###  팀명 :
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Jersey+20&size=40&pause=1000&color=3200AE&random=false&width=435&lines=1oT)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Jersey+10+Charted&size=46&pause=1000&color=003EFF&random=false&width=435&lines=1oT)](https://git.io/typing-svg)
 - "1oT"라는 팀 이름은 "Internet of Things"의 약어인 "IoT"를 변형한 것으로, 여기서 "I"를 숫자 "1"로 대체하였습니다. 이 이름은 첫 번째라는 의미의 숫자 "1"을 사용함으로써 팀이 IoT 분야에서 빠르고 앞서서 발전하고자 하는 포부를 나타냈습니다. 1oT 팀은 IoT 기술과 하나 되어 꾸준히 발전해나가겠습니다.
 
 <div align="center">
