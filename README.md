@@ -65,6 +65,9 @@
 
 <hr>
 
+## Architecture
+<img src="https://github.com/mini-xi/readmetest/blob/a3c73ff3e9f7b7600f0cee23a7f5cdbb2decda90/img/itty_architecture.png"/>
+
 ## Build Tutorial
 
 ### Backend
