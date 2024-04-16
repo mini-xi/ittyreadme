@@ -474,7 +474,7 @@ kubectl apply -f grafana/
 
 <br>
 
-#### Docker를 활용하여 ITTY 서비스의 백엔드와 데이터베이스를 컨테이너화함으로써, 각 서비스의 실행 환경을 격리하고 빠르게 배포할 수 있는 기반을 마련하였고, 이 컨테이너들은 Kubernetes라는 컨테이너 오케스트레이션 플랫폼에 의해 관리됨. Kubernetes는 복잡한 컨테이너화된 어플리케이션을 자동으로 배포, 확장 및 운영하는데 사용하여 Docker Container를 보다 효율적으로 관리.
+<b> Docker를 활용하여 ITTY 서비스의 백엔드와 데이터베이스를 컨테이너화함으로써, 각 서비스의 실행 환경을 격리하고 빠르게 배포할 수 있는 기반을 마련하였고, 이 컨테이너들은 Kubernetes라는 컨테이너 오케스트레이션 플랫폼에 의해 관리됨. Kubernetes는 복잡한 컨테이너화된 어플리케이션을 자동으로 배포, 확장 및 운영하는데 사용하여 Docker Container를 보다 효율적으로 관리.</b>
 
 <br>
 
@@ -516,8 +516,22 @@ kubectl apply -f grafana/
 |오픈 소스 모니터링 및 알림 도구. 시스템과 서비스의 성능을 실시간으로 감시하며, 주로 시간에 따른 데이터 포인트들을 수집하는 시계열 데이터베이스 형태로 작동. 다양한 설정 가능한 알림 규칙을 통해 문제가 발생했을 때 경고를 보낼 수 있음|다양한 데이터 소스를 연동하여 시각적으로 데이터를 보여주는 대시보드 및 그래픽 도구. Prometheus, InfluxDB 등과 같은 여러 모니터링 도구의 데이터를 통합하여 사용자가 시각적으로 이해하기 쉬운 그래프, 차트 등을 생성.|
 </div>
 
-#### 프로메테우스는 실시간으로 서비스의 핵심 지표를 수집 및 저장, Grafana는 이 데이터를 시각적 대시보드로 변환해 관리자가 서비스 상태를 쉽게 모니터링. 시스템의 CPU, 메모리, 네트워크 사용량 등을 지속적으로 추적하며, 문제 발생 시 Slack을 통해 즉각적인 알림을 ITTY 관리자에게 제공.
+<b> 프로메테우스는 실시간으로 서비스의 핵심 지표를 수집 및 저장, Grafana는 이 데이터를 시각적 대시보드로 변환해 관리자가 서비스 상태를 쉽게 모니터링. 시스템의 CPU, 메모리, 네트워크 사용량 등을 지속적으로 추적하며, 문제 발생 시 Slack을 통해 즉각적인 알림을 ITTY 관리자에게 제공.</b>
 
+### 🔴 Error 발생 시
+<details>
+<summary><b>Error 발생(ex: 과부하) 시에는 Slack으로 알림</b></summary>
+<div align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/57d18277934536ec1be73660e8aa900c4cbcb4b9/img/%EC%83%81%ED%83%9C%EC%A1%B0%ED%9A%8C.png"/><br>
+	→ Grafana로 상태 조회<br><br>
+	<img src="https://github.com/mini-xi/ittyreadme/blob/57d18277934536ec1be73660e8aa900c4cbcb4b9/img/L_jenkinsR_server.png"/><br>
+	→ Left(왼쪽)는 Jenkins, Right(오른쪽)는 Server를 나타냄<br><br>
+	<img src="https://github.com/mini-xi/ittyreadme/blob/57d18277934536ec1be73660e8aa900c4cbcb4b9/img/testAlert.png"/><br>
+        → Slack으로 오는 Test Alert. 추후에 오류에 대한 메세지(알림) 내용 추가 가능
+
+</div>
+
+</details>
 
 ## 회고
 
