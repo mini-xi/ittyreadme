@@ -73,51 +73,25 @@
 ### Backend
 ### BackEnd Server를 Docker 컨테이너로 생성
 
-#### 1.1. build 파일 생성
-
-```java
-./gradlew clean build
-```
-
-- 기존에 만들어진 build를 지운 후, 새 build 파일을 생성
-
-#### 1.2. Docker Hub 로그인
+#### 1.1. Docker Hub 로그인
 
 ```java
 docker login
 ```
 
-#### 1.3. Docker에 Dockerfile (image) 생성
-
-```java
-docker build -t (DockerHub ID)/backend_server .
-```
-
-- Docker에 eodud3196/backend_server 라는 이름의 Dockerfile(image)를 생성
-- 이때 [eodud3196]은 본인의 DockerHub 아이디로 작성
-- 마지막에 .을 붙이는 이유: 현재 디렉토리에 존재하는 Dockerfile을 기준으로 image 파일을 생성한다는 의미
-
-#### 1.4. Docker에 image Push(이미지 배포)
-
-```java
-docker push (DockerHub ID)/backend_server
-```
-
-- 생성한 이미지 파일을 도커에 푸시
-
-#### 1.5. manifest 파일 생성
+#### 1.2. manifest 파일 생성
 
 - deployment 파일 생성
       
 - service 파일 생성
     
-#### 1.6. kubelet에 deployment 적용하여 Pod 생성(컨테이너 배포)
+#### 1.3. kubelet에 deployment 적용하여 Pod 생성(컨테이너 배포)
 
 ```powershell
 kubectl apply -f itty-project-deployment.yml
 ```
 
-#### 1.7 Proxy에 service 적용
+#### 1.4 Proxy에 service 적용
 
 ```powershell
 kubectl apply -f itty-project-service.yml
