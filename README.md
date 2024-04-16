@@ -147,6 +147,8 @@ docker push eodud3196/backend_server
 <b> 1.7. manifest 파일 생성</b><br>
 
 - deployment 파일 생성
+    
+    [itty-project-deployment.yml]([https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/2c74ae88-ee53-493a-a24a-eec28a107c14/itty-project-deployment.yml](https://github.com/mini-xi/ittyreadme/blob/28776c89cbe72a17e28dd48849f3ffcc1f8448af/yml/itty-project-deployment.yml))
 
 
 - service 파일 생성
