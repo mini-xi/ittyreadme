@@ -148,12 +148,12 @@ docker push eodud3196/backend_server
 
 - deployment 파일 생성
     
-    [itty-project-deployment.yml]([https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/2c74ae88-ee53-493a-a24a-eec28a107c14/itty-project-deployment.yml](https://github.com/mini-xi/ittyreadme/blob/28776c89cbe72a17e28dd48849f3ffcc1f8448af/yml/itty-project-deployment.yml))
+    [itty-project-deployment.yml](https://github.com/mini-xi/ittyreadme/blob/28776c89cbe72a17e28dd48849f3ffcc1f8448af/yml/itty-project-deployment.yml)
 
 
 - service 파일 생성
     
-    [itty-project-service.yml](https://prod-files-secure.s3.us-west-2.amazonaws.com/c78cddc1-c25c-4915-ab0f-e94172746e8b/f69845da-3e8d-4ee8-9c26-67a7bdbe9ea2/itty-project-service.yml)
+    [itty-project-service.yml](https://github.com/mini-xi/ittyreadme/blob/9476400bf8ca15dc2a479e0bf24f1f7c288f087e/yml/itty-project-service.yml)
   
 
 <b> 1.8. kubelet에 deployment 적용하여 Pod 생성(컨테이너 배포)</b><br>
