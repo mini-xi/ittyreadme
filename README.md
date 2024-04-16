@@ -7,8 +7,8 @@
 
 <div align="center">
 <figure class="half">
-<img src="https://github.com/mini-xi/readmetest/blob/84a151c2c6045c0c95a7876118bc82d34bf03b18/img/ittylogo.jpg" height=175>
-<img src="https://github.com/mini-xi/readmetest/blob/84a151c2c6045c0c95a7876118bc82d34bf03b18/img/1ot.png" height=175>
+<img src="https://github.com/mini-xi/ittyreadme/blob/84a151c2c6045c0c95a7876118bc82d34bf03b18/img/ittylogo.jpg" height=175>
+<img src="https://github.com/mini-xi/ittyreadme/blob/84a151c2c6045c0c95a7876118bc82d34bf03b18/img/1ot.png" height=175>
 </figure>
 </div>
 
@@ -66,7 +66,7 @@
 <hr>
 
 ## Architecture
-<img src="https://github.com/mini-xi/readmetest/blob/a3c73ff3e9f7b7600f0cee23a7f5cdbb2decda90/img/itty_architecture.png"/>
+<img src="https://github.com/mini-xi/ittyreadme/blob/a3c73ff3e9f7b7600f0cee23a7f5cdbb2decda90/img/itty_architecture.png"/>
 
 ## Build Tutorial
 
@@ -132,19 +132,19 @@ npm run dev
 ## 2. 요구사항 명세서
 <details>
  <summary><b>ITTY 요구사항 명세서</b></summary>
-<a href="https://docs.google.com/spreadsheets/d/1wuUfWmf4uBKcitZtEazmBs3p3qLT8VQIUCQV8zQFbRM/edit#gid=0"><img src="https://github.com/mini-xi/readmetest/blob/cf0072894a96133116c7a2675d8c23b30b9029e6/img/ITTY-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C_page-0001.jpg"/></a>
+<a href="https://docs.google.com/spreadsheets/d/1wuUfWmf4uBKcitZtEazmBs3p3qLT8VQIUCQV8zQFbRM/edit#gid=0"><img src="https://github.com/mini-xi/ittyreadme/blob/cf0072894a96133116c7a2675d8c23b30b9029e6/img/ITTY-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C_page-0001.jpg"/></a>
 </details>
 
 ## 3. API 명세서
 <details>
  <summary><b>ITTY API 명세서</b></summary>
-<a href="https://docs.google.com/spreadsheets/d/1lr_gEIuy8DTv-7cAwzX8ZR8aSYRaOAROJXhfoZUX7EI/edit#gid=0"><img src="https://github.com/mini-xi/readmetest/blob/036a43a7b31676ed127a73b84e1f3aa6b0e0105d/img/itty-API%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20API%EB%AA%85%EC%84%B8%EC%84%9C_page-0001.jpg"></a>
+<a href="https://docs.google.com/spreadsheets/d/1lr_gEIuy8DTv-7cAwzX8ZR8aSYRaOAROJXhfoZUX7EI/edit#gid=0"><img src="https://github.com/mini-xi/ittyreadme/blob/036a43a7b31676ed127a73b84e1f3aa6b0e0105d/img/itty-API%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20API%EB%AA%85%EC%84%B8%EC%84%9C_page-0001.jpg"></a>
 </details>
 
 ## 4. WireFrame
 <details>
  <summary><b>ITTY WireFrame</b></summary>
-<img src="https://github.com/mini-xi/readmetest/blob/8f82491222083dc4f96c1e5c2f6a39053f038334/img/wireframe_itty.png"/>
+<img src="https://github.com/mini-xi/ittyreadme/blob/8f82491222083dc4f96c1e5c2f6a39053f038334/img/wireframe_itty.png"/>
 </details>
 
 ## 5. Story Board
@@ -152,19 +152,19 @@ npm run dev
 <details>
 <summary><b>ITTY Story Board </b></summary>
 <div align="center">
-    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_001.png"/>
-    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_002.png"/>
-    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_003.png"/>
-    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_004.png"/>
-    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_005.png"/>
-    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_006.png"/>
-    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_007.png"/>
-    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_008.png"/>
-    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_009.png"/>
-    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_010.png"/>
-    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_011.png"/>
-    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_012.png"/>
-    <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_013.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_001.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_002.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_003.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_004.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_005.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_006.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_007.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_008.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_009.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_010.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_011.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_012.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_013.png"/>
 </div>
 </details>
 
@@ -177,11 +177,11 @@ npm run dev
 
 <div align="center">
 
-<img src="https://github.com/mini-xi/readmetest/blob/9b3b3a0b3912d2f23e09dae8a3148caa70c61473/img/dockerkubernetis1.png" height=300/>
+<img src="https://github.com/mini-xi/ittyreadme/blob/9b3b3a0b3912d2f23e09dae8a3148caa70c61473/img/dockerkubernetis1.png" height=300/>
 
 |Docker|Kubernetes|
 |:---:|:---:|
-|<img src="https://github.com/mini-xi/readmetest/blob/9b3b3a0b3912d2f23e09dae8a3148caa70c61473/img/docker.png"/>|<img src="https://github.com/mini-xi/readmetest/blob/9b3b3a0b3912d2f23e09dae8a3148caa70c61473/img/kubernetes.png"/>|
+|<img src="https://github.com/mini-xi/ittyreadme/blob/9b3b3a0b3912d2f23e09dae8a3148caa70c61473/img/docker.png"/>|<img src="https://github.com/mini-xi/ittyreadme/blob/9b3b3a0b3912d2f23e09dae8a3148caa70c61473/img/kubernetes.png"/>|
 |애플리케이션을 컨테이너라고 불리는 표준화된 단위로 포장하는 기술. 컨테이너는 애플리케이션과 그 애플리케이션이 필요로 하는 모든 종속성을 포함하여 어디에서나 동일하게 실행될 수 있도록 함|여러 대의 서버(노드)에 걸쳐 컨테이너화된 애플리케이션을 배포, 관리, 확장하는데 사용되는 오픈소스 오케스트레이션 플랫폼|
 
 </div>
@@ -192,7 +192,7 @@ npm run dev
 
 |Prometheus|Grafana|
 |:---:|:---:|
-|<img src="https://github.com/mini-xi/readmetest/blob/a6bd6a757e8aa88db9c62752b6ceccd5519cacff/img/prometheus.png"/>|<img src="https://github.com/mini-xi/readmetest/blob/a6bd6a757e8aa88db9c62752b6ceccd5519cacff/img/grafana.png"/>|
+|<img src="https://github.com/mini-xi/ittyreadme/blob/a6bd6a757e8aa88db9c62752b6ceccd5519cacff/img/prometheus.png"/>|<img src="https://github.com/mini-xi/ittyreadme/blob/a6bd6a757e8aa88db9c62752b6ceccd5519cacff/img/grafana.png"/>|
 |||
 
 </div>
