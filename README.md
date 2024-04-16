@@ -149,9 +149,9 @@ npm run dev
 
 ## 5. Story Board
 
-<div align="center">
 <details>
 <summary><b>ITTY Story Board </b></summary>
+<div align="center">
     <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_001.png"/>
     <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_002.png"/>
     <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_003.png"/>
@@ -165,8 +165,8 @@ npm run dev
     <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_011.png"/>
     <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_012.png"/>
     <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_013.png"/>
-</details>
 </div>
+</details>
 
 
 ## 6. 테스트 계획
