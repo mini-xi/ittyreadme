@@ -135,19 +135,40 @@ npm run dev
 <a href="https://docs.google.com/spreadsheets/d/1wuUfWmf4uBKcitZtEazmBs3p3qLT8VQIUCQV8zQFbRM/edit#gid=0"><img src="https://github.com/mini-xi/ittyreadme/blob/cf0072894a96133116c7a2675d8c23b30b9029e6/img/ITTY-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C_page-0001.jpg"/></a>
 </details>
 
-## 3. API 명세서
+## 3. DDD / Modeling
+
+<details>
+ <summary><b>ITTY DDD</b></summary>
+ <div align="center">
+    <img src="https://github.com/mini-xi/ittyreadme/blob/3cd89d4572341658048a6db67d4c454e8e3ad438/img/itty_ddd1.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/3cd89d4572341658048a6db67d4c454e8e3ad438/img/itty_ddd2.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/3cd89d4572341658048a6db67d4c454e8e3ad438/img/itty_ddd3.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/3cd89d4572341658048a6db67d4c454e8e3ad438/img/itty_ddd4.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/3cd89d4572341658048a6db67d4c454e8e3ad438/img/itty_ddd5.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/3cd89d4572341658048a6db67d4c454e8e3ad438/img/itty_ddd6.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/3cd89d4572341658048a6db67d4c454e8e3ad438/img/itty_ddd7.png"/>
+    <img src="https://github.com/mini-xi/ittyreadme/blob/3cd89d4572341658048a6db67d4c454e8e3ad438/img/itty_ddd8.png"/>
+ </div>
+</details>
+
+<details>
+ <summary><b>ITTY Modeling</b></summary>
+
+</details>
+
+## 4. API 명세서
 <details>
  <summary><b>ITTY API 명세서</b></summary>
 <a href="https://docs.google.com/spreadsheets/d/1lr_gEIuy8DTv-7cAwzX8ZR8aSYRaOAROJXhfoZUX7EI/edit#gid=0"><img src="https://github.com/mini-xi/ittyreadme/blob/036a43a7b31676ed127a73b84e1f3aa6b0e0105d/img/itty-API%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20API%EB%AA%85%EC%84%B8%EC%84%9C_page-0001.jpg"></a>
 </details>
 
-## 4. WireFrame
+## 5. WireFrame
 <details>
  <summary><b>ITTY WireFrame</b></summary>
 <img src="https://github.com/mini-xi/ittyreadme/blob/8f82491222083dc4f96c1e5c2f6a39053f038334/img/wireframe_itty.png"/>
 </details>
 
-## 5. Story Board
+## 6. Story Board
 
 <details>
 <summary><b>ITTY Story Board </b></summary>
@@ -169,9 +190,9 @@ npm run dev
 </details>
 
 
-## 6. 테스트 계획
+## 7. 테스트 계획
 
-## 7. 테스트
+## 8. 테스트
 
 ## Docker / Kubernetes
 
