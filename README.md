@@ -63,6 +63,84 @@
 - J soup 1.17.2
 </details>
 
+<hr>
+
+## Build Tutorial
+
+### Backend
+### BackEnd Server를 Docker 컨테이너로 생성
+
+#### 1.1. build 파일 생성
+
+```java
+./gradlew clean build
+```
+
+- 기존에 만들어진 build를 지운 후, 새 build 파일을 생성
+
+#### 1.2. Docker Hub 로그인
+
+```java
+docker login
+```
+
+#### 1.3. Docker에 Dockerfile (image) 생성
+
+```java
+docker build -t (DockerHub ID)/backend_server .
+```
+
+- Docker에 eodud3196/backend_server 라는 이름의 Dockerfile(image)를 생성
+- 이때 [eodud3196]은 본인의 DockerHub 아이디로 작성
+- 마지막에 .을 붙이는 이유: 현재 디렉토리에 존재하는 Dockerfile을 기준으로 image 파일을 생성한다는 의미
+
+#### 1.4. Docker에 image Push(이미지 배포)
+
+```java
+docker push (DockerHub ID)/backend_server
+```
+
+- 생성한 이미지 파일을 도커에 푸시
+
+#### 1.5. manifest 파일 생성
+
+- deployment 파일 생성
+      
+- service 파일 생성
+    
+#### 1.6. kubelet에 deployment 적용하여 Pod 생성(컨테이너 배포)
+
+```powershell
+kubectl apply -f itty-project-deployment.yml
+```
+
+#### 1.7 Proxy에 service 적용
+
+```powershell
+kubectl apply -f itty-project-service.yml
+```
+
+---
+
+### 2. 프론트엔드
+
+#### 2.1 종속성 설치
+```visual-basic
+npm install
+```
+
+- 필요한 모든 종속성을 설치하고, 프로젝트가 생산 환경에서 제대로 실행될 수 있도록 구성
+- 개발 환경에서는 디버깅을 위한 도구가 필요하지만, 배포 시에는 최적화된 코드가 필요함. **`npm install`**은 필요한 모든 환경 설정 파일과 스크립트를 설치하며, 이는 배포 과정에서 코드를 최적화하고, 필요한 모든 구성 요소가 포함행
+```visual-basic
+npm run dev
+```
+
+- 배포 받은 Vue 파일 실행 (Localhost:(포트번호) 로 지정)
+
+
+## Continueous Deployment
+
+
 ## 2. 요구사항 명세서
 <a href="https://docs.google.com/spreadsheets/d/1wuUfWmf4uBKcitZtEazmBs3p3qLT8VQIUCQV8zQFbRM/edit#gid=0"><img src="https://github.com/mini-xi/readmetest/blob/cf0072894a96133116c7a2675d8c23b30b9029e6/img/ITTY-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C_page-0001.jpg"/></a>
 
