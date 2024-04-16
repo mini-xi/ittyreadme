@@ -178,6 +178,15 @@ npm run dev
 <div align="center">
 
 <img src="https://github.com/mini-xi/ittyreadme/blob/9b3b3a0b3912d2f23e09dae8a3148caa70c61473/img/dockerkubernetis1.png" height=300/>
+</div>
+
+<br>
+
+#### Docker를 이용해 ITTY 서비스의 백엔드와 데이터베이스 컨테이너를 구축한 다음, Kubernetes를 통해 이들을 자동으로 배포하고 쉽게 관리할 수 있도록함. 이 과정을 통해 배포와 확장성을 향상시킴
+
+<br>
+
+<div align="center">
 
 |Docker|Kubernetes|
 |:---:|:---:|
@@ -193,9 +202,11 @@ npm run dev
 |Prometheus|Grafana|
 |:---:|:---:|
 |<img src="https://github.com/mini-xi/ittyreadme/blob/a6bd6a757e8aa88db9c62752b6ceccd5519cacff/img/prometheus.png"/>|<img src="https://github.com/mini-xi/ittyreadme/blob/a6bd6a757e8aa88db9c62752b6ceccd5519cacff/img/grafana.png"/>|
-|||
-
+|오픈 소스 모니터링 및 알림 도구. 시스템과 서비스의 성능을 실시간으로 감시하며, 주로 시간에 따른 데이터 포인트들을 수집하는 시계열 데이터베이스 형태로 작동. 다양한 설정 가능한 알림 규칙을 통해 문제가 발생했을 때 경고를 보낼 수 있음|다양한 데이터 소스를 연동하여 시각적으로 데이터를 보여주는 대시보드 및 그래픽 도구. Prometheus, InfluxDB 등과 같은 여러 모니터링 도구의 데이터를 통합하여 사용자가 시각적으로 이해하기 쉬운 그래프, 차트 등을 생성.|
 </div>
+
+#### 프로메테우스는 실시간으로 서비스의 핵심 지표를 수집 및 저장, Grafana는 이 데이터를 시각적 대시보드로 변환해 관리자가 서비스 상태를 쉽게 모니터링. 시스템의 CPU, 메모리, 네트워크 사용량 등을 지속적으로 추적하며, 문제 발생 시 Slack을 통해 즉각적인 알림을 ITTY 관리자에게 제공
+
 
 ## 회고
 
