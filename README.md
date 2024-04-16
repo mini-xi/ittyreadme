@@ -70,7 +70,7 @@
 
 ## Build Tutorial
 
-### Backend
+### 1. Backend
 ### BackEnd Server를 Docker 컨테이너로 생성
 
 #### 1.1. Docker Hub 로그인
