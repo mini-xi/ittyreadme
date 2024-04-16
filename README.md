@@ -46,8 +46,8 @@
 ## 2. 요구사항 명세서
 <a href="https://docs.google.com/spreadsheets/d/1wuUfWmf4uBKcitZtEazmBs3p3qLT8VQIUCQV8zQFbRM/edit#gid=0"><img src="https://github.com/mini-xi/readmetest/blob/cf0072894a96133116c7a2675d8c23b30b9029e6/img/ITTY-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C_page-0001.jpg"/></a>
 
-## 3. 기능 명세서
-
+## 3. API 명세서
+<a href="https://docs.google.com/spreadsheets/d/1lr_gEIuy8DTv-7cAwzX8ZR8aSYRaOAROJXhfoZUX7EI/edit#gid=0"><img src="https://github.com/mini-xi/readmetest/blob/81ecf13dcfebc5e084bb38004d497eb322ab38b4/img/itty-API%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20API%EB%AA%85%EC%84%B8%EC%84%9C.pdf"></a>
 
 ## 4. WireFrame
 
