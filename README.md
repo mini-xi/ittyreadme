@@ -1,5 +1,5 @@
 # <p align="center">ITTY</p>
-<img src="https://capsule-render.vercel.app/api?type=wave&color=#000000&height=20px&section=header&text=15pt&fontSize=15pt" />
+<img src="https://capsule-render.vercel.app/api?type=transparent&color=ffffff&height=150&section=header" />
 <p align="center"></p>
 
 ###  팀명 : 1oT
