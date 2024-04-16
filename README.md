@@ -387,13 +387,19 @@ kubectl apply -f grafana/
     - 19004 → Spring Boot 3.x Statistics
     - 12646 → Jenkins
 
-## 2. 요구사항 명세서
+## 2. WBS
+<details>
+  <summary><b>ITTY WBS</b></summary>
+   <a href="https://docs.google.com/spreadsheets/d/1swhqPyeuwVAs0JhWyNGbQsM2AFr49tghBM3hoZGmj_8/edit#gid=0"><img src="https://github.com/mini-xi/ittyreadme/blob/fe0a3899f7b26fb38ef01cf017289d7cb99aed95/img/ITTY-WBS.jpg"/></a>
+</details>
+
+## 3. 요구사항 명세서
 <details>
  <summary><b>ITTY 요구사항 명세서</b></summary>
 <a href="https://docs.google.com/spreadsheets/d/1wuUfWmf4uBKcitZtEazmBs3p3qLT8VQIUCQV8zQFbRM/edit#gid=0"><img src="https://github.com/mini-xi/ittyreadme/blob/cf0072894a96133116c7a2675d8c23b30b9029e6/img/ITTY-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C_page-0001.jpg"/></a>
 </details>
 
-## 3. DDD / Modeling
+## 4. DDD / Modeling
 
 <details>
  <summary><b>ITTY DDD</b></summary>
@@ -427,19 +433,19 @@ kubectl apply -f grafana/
  
  </details>
 
-## 4. API 명세서
+## 5. API 명세서
 <details>
  <summary><b>ITTY API 명세서</b></summary>
 <a href="https://docs.google.com/spreadsheets/d/1lr_gEIuy8DTv-7cAwzX8ZR8aSYRaOAROJXhfoZUX7EI/edit#gid=0"><img src="https://github.com/mini-xi/ittyreadme/blob/036a43a7b31676ed127a73b84e1f3aa6b0e0105d/img/itty-API%20%EB%AA%85%EC%84%B8%EC%84%9C%20-%20API%EB%AA%85%EC%84%B8%EC%84%9C_page-0001.jpg"></a>
 </details>
 
-## 5. WireFrame
+## 6. WireFrame
 <details>
  <summary><b>ITTY WireFrame</b></summary>
 <img src="https://github.com/mini-xi/ittyreadme/blob/8f82491222083dc4f96c1e5c2f6a39053f038334/img/wireframe_itty.png"/>
 </details>
 
-## 6. Story Board
+## 7. Story Board
 
 <details>
 <summary><b>ITTY Story Board </b></summary>
@@ -461,9 +467,9 @@ kubectl apply -f grafana/
 </details>
 
 
-## 7. 테스트 계획
+## 8. 테스트 계획
 
-## 8. 테스트
+## 9. 테스트
 
 ## ⚙️ Docker / Kubernetes
 
