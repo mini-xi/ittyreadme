@@ -77,32 +77,91 @@
 
 ### 1. Backend
 ### BackEnd Server를 Docker 컨테이너로 생성
+#### 1.1. build.gradle 에 Jasypt 의존성 추가
 
-#### 1.1. Docker Hub 로그인
+<aside>
+🚨 jasypt 3.0.5 보다 이전 버전에서는 빌드 커맨드가 잘 작동하지 않아 현재 최신 버전인 3.0.5 버전을 사용하였다.
+</aside>
+
+```powershell
+implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.5'
+
+tasks.named('test') {
+	useJUnitPlatform()
+	systemProperty 'jasypt.encryptor.password', findProperty("jasypt.encryptor.password")
+}
+```
+
+#### 1.2. Dockerfile에 jasypt 관련 내용 추가
+
+```docker
+FROM openjdk:17-alpine
+COPY build/libs/*.jar app.jar
+
+ENTRYPOINT ["java", "-jar", "app.jar", "--jasypt.encryptor.password=itty"]
+```
+
+#### 1.3. build 파일 생성
+<aside>
+🚨 설정파일인 application.yml의 민감정보들을 암호화하여 Github에 업로드하기 위해
+Jasypt를 사용하였다.
+
+이로 인해 암호화된 민감정보들을 다시 복호화하여 프로그램이 인식하도록 프로그램 외부에서 복호화 key를 전달해주어야 하는데,
+
+그 key를 전달하는 방법으로 CLI 환경에서 빌드하는 명령에 key 값을 추가하는 방식을 택하였다.
+
+gradle을 사용하여 빌드 시 `-P` 플래그를 추가한다.
+
+</aside>
+
+```powershell
+./gradlew clean build -P jasypt.encryptor.password=itty
+```
+
+- `clean`: 기존에 만들어진 build를 지운 후, 새 build 파일을 생성
+
+#### 1.4. Docker Hub 로그인
 
 ```java
 docker login
 ```
 
-#### 1.2. manifest 파일 생성
+#### 1.5. Docker에 Dockerfile (image) 생성하기
 
-- deployment 파일 생성
-      
+```java
+docker build -t eodud3196/backend_server .
+```
+
+- Docker에 (DockerHubId)/backend_server 라는 이름의 Dockerfile(image)를 생성
+- 이때 [DockerHubId]은 본인의 DockerHub 아이디로 작성
+- 마지막에 .을 붙이는 이유: 현재 디렉토리에 존재하는 Dockerfile을 기준으로 image 파일을 생성한다는 의미
+
+#### 1.6. Docker에 image Push(이미지 배포)
+
+```java
+docker push eodud3196/backend_server
+```
+
+- 생성한 이미지 파일을 도커에 푸시
+
+#### 1.7. manifest 파일 생성
+
+- deployment 파일 생성    
+
 - service 파일 생성
-    
-#### 1.3. kubelet에 deployment 적용하여 Pod 생성(컨테이너 배포)
+  
+
+#### 1.8. kubelet에 deployment 적용하여 Pod 생성(컨테이너 배포)
 
 ```powershell
 kubectl apply -f itty-project-deployment.yml
 ```
 
-#### 1.4 Proxy에 service 적용
+#### 1.9. Proxy에 service 적용
 
 ```powershell
 kubectl apply -f itty-project-service.yml
 ```
-
----
 
 ### 2. Frontend
 
