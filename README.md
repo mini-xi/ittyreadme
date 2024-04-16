@@ -76,8 +76,8 @@
 ## ⚙️ Build Tutorial
 
 ### 1. Backend
-### BackEnd Server를 Docker 컨테이너로 생성
-#### 1.1. build.gradle 에 Jasypt 의존성 추가
+<b> BackEnd Server를 Docker 컨테이너로 생성</b>
+<b> 1.1. build.gradle 에 Jasypt 의존성 추가</b><br>
 
 <aside>
 🚨 jasypt 3.0.5 보다 이전 버전에서는 빌드 커맨드가 잘 작동하지 않아 현재 최신 버전인 3.0.5 버전을 사용하였다.
@@ -92,7 +92,7 @@ tasks.named('test') {
 }
 ```
 
-#### 1.2. Dockerfile에 jasypt 관련 내용 추가
+<b> 1.2. Dockerfile에 jasypt 관련 내용 추가 </b><br>
 
 ```docker
 FROM openjdk:17-alpine
@@ -101,7 +101,7 @@ COPY build/libs/*.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar", "--jasypt.encryptor.password=itty"]
 ```
 
-#### 1.3. build 파일 생성
+<b> 1.3. build 파일 생성 </b><br>
 <aside>
 🚨 설정파일인 application.yml의 민감정보들을 암호화하여 Github에 업로드하기 위해
 Jasypt를 사용하였다.
@@ -120,23 +120,23 @@ gradle을 사용하여 빌드 시 `-P` 플래그를 추가한다.
 
 - `clean`: 기존에 만들어진 build를 지운 후, 새 build 파일을 생성
 
-#### 1.4. Docker Hub 로그인
+<b> 1.4. Docker Hub 로그인</b><br>
 
 ```java
 docker login
 ```
 
-#### 1.5. Docker에 Dockerfile (image) 생성하기
+<b> 1.5. Docker에 Dockerfile (image) 생성하기</b><br>
 
 ```java
-docker build -t eodud3196/backend_server .
+docker build -t (DockerHubId)/backend_server .
 ```
 
 - Docker에 (DockerHubId)/backend_server 라는 이름의 Dockerfile(image)를 생성
 - 이때 [DockerHubId]은 본인의 DockerHub 아이디로 작성
 - 마지막에 .을 붙이는 이유: 현재 디렉토리에 존재하는 Dockerfile을 기준으로 image 파일을 생성한다는 의미
 
-#### 1.6. Docker에 image Push(이미지 배포)
+<b> 1.6. Docker에 image Push(이미지 배포) </b><br>
 
 ```java
 docker push eodud3196/backend_server
@@ -144,20 +144,20 @@ docker push eodud3196/backend_server
 
 - 생성한 이미지 파일을 도커에 푸시
 
-#### 1.7. manifest 파일 생성
+<b> 1.7. manifest 파일 생성 </b><br>
 
 - deployment 파일 생성    
 
 - service 파일 생성
   
 
-#### 1.8. kubelet에 deployment 적용하여 Pod 생성(컨테이너 배포)
+<b> 1.8. kubelet에 deployment 적용하여 Pod 생성(컨테이너 배포)</b><br>
 
 ```powershell
 kubectl apply -f itty-project-deployment.yml
 ```
 
-#### 1.9. Proxy에 service 적용
+<b> 1.9. Proxy에 service 적용</b><br>
 
 ```powershell
 kubectl apply -f itty-project-service.yml
@@ -165,7 +165,6 @@ kubectl apply -f itty-project-service.yml
 
 ### 2. Frontend
 
-#### 2.1 종속성 설치
 ```visual-basic
 npm install
 ```
