@@ -186,5 +186,16 @@ npm run dev
 
 </div>
 
+## Prometheus / Grafana
+
+<div align="center">
+
+|Prometheus|Grafana|
+|:---:|:---:|
+|<img src="https://github.com/mini-xi/readmetest/blob/a6bd6a757e8aa88db9c62752b6ceccd5519cacff/img/prometheus.png"/>|<img src="https://github.com/mini-xi/readmetest/blob/a6bd6a757e8aa88db9c62752b6ceccd5519cacff/img/grafana.png"/>|
+|||
+
+</div>
+
 ## 회고
 
