@@ -52,8 +52,7 @@
 
 ## 4. WireFrame
 
-
-###  - WireFrame
+<img src="https://github.com/mini-xi/readmetest/blob/8f82491222083dc4f96c1e5c2f6a39053f038334/img/wireframe_itty.png"/>
 
 ## 5. Story Board
 
