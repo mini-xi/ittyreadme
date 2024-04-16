@@ -467,7 +467,12 @@ kubectl apply -f grafana/
 </details>
 
 
-## 8. 테스트 계획
+## 8. 테스트 정의서
+
+<details>
+ <summary><b>ITTY 테스트 명세서</b></summary>
+<a href="https://docs.google.com/spreadsheets/d/1IS_woAh7IsvPFhevX0S7vHAVZlR19LKZNzXk-3528i4/edit#gid=0"><img src="테스트 정의서 이미지 넣어야 함"/></a>
+</details>
 
 ## 9. 테스트
 
