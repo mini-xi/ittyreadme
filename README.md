@@ -44,6 +44,25 @@
 
 </div>
 
+<br>
+
+<details>
+<summary><b>개발도구 및 기술스택 Version</b></summary>
+ 
+- Java17
+- Spring 3.2.4
+- Gradle 8.5+
+- Spring Security 6
+- Jwt 0.11.5
+- CSS 3
+- HTML 5
+- Bootstrap 5
+- Kubernetis 1.29.1
+- Docker 25.0.3
+- Jasypt 3.0.5
+- J soup 1.17.2
+</details>
+
 ## 2. 요구사항 명세서
 <a href="https://docs.google.com/spreadsheets/d/1wuUfWmf4uBKcitZtEazmBs3p3qLT8VQIUCQV8zQFbRM/edit#gid=0"><img src="https://github.com/mini-xi/readmetest/blob/cf0072894a96133116c7a2675d8c23b30b9029e6/img/ITTY-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C%20-%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EB%AA%85%EC%84%B8%EC%84%9C_page-0001.jpg"/></a>
 
@@ -74,8 +93,6 @@
     <img src="https://github.com/mini-xi/readmetest/blob/fc207d14c68663101fce37ba36d7c1696a36111a/img/story_013.png"/>
 </details>
 </div>
-
-## 📝 요구사항
 
 
 ## 6. 테스트 계획
