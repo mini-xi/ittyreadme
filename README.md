@@ -461,6 +461,8 @@ kubectl apply -f grafana/
 - 모니터링 도구 통합: Prometheus, Grafana 등을 사용하여 애플리케이션의 성능을 실시간으로 모니터링.<br>
 - 알림 설정: Slack, 이메일 등을 통해 이슈에 대해서 알림을 받아볼 수 있음.<br>
 
+<hr>
+
 ```
 pipeline {
     agent any
