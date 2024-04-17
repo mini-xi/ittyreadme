@@ -12,7 +12,7 @@
 </figure>
 </div>
 
-###  팀원
+###  팀원 :
  
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/mini-xi) <strong>&nbsp;&nbsp;배성민</strong> <br>
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/helloItsUniverse) <strong>&nbsp;&nbsp;소우주</strong> <br>
