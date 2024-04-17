@@ -521,6 +521,8 @@ kubectl apply -f grafana/
 
 </div>
 
+### Kubernetes Orchestration
+
 <details>
  <summary><b>Kubernetes Orchestration</b></summary>
 <br>
