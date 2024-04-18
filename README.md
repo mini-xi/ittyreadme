@@ -419,14 +419,14 @@ kubectl apply -f grafana/
 
 ---
 
-# 7. Jenkins
+### 7. Jenkins
 
 <aside>
 💡 Jenkins는 지속적인 통합(Continuous Integration, CI) 및 지속적인 전달(Continuous Delivery, CD)를 가능하게 하는 오픈 소스 자동화 도구. 소프트웨어 개발 및 배포 프로세스를 자동화하여 개발자 및 팀이 효율적으로 작업할 수 있는 환경을 구축하기 위해 적용함.
 
 </aside>
 
-### 7.1 Dockerfile 생성
+<b>7.1 Dockerfile 생성</b>
 
 [Dockerfile](https://github.com/mini-xi/ittyreadme/blob/d94bf1cdb581931e32a2f5d0a3b592e87f611696/yml/Dockerfile)
 
@@ -449,7 +449,7 @@ docker-compose up
 
 - 위와 같은 명령어로 jenkins 실행
 
-### 7.2 플러그인 설치
+<b>7.2 플러그인 설치</b>
 
 - 도커 컨테이너 실행이 완료 되면 추가 플러그인 설치가 필요함.
     - Dashboard → Jenkins 관리 → Plugin
@@ -457,7 +457,7 @@ docker-compose up
     - Dashboard → Jenkins 관리 → System
     - Locale → Default Language를 ko로 변경
 
-### 7.3 ssh 설정
+<b>7.3 ssh 설정</b>
 
 - Jenkins 도커 컨테이너 접속
 
@@ -492,7 +492,7 @@ cat ssh-jenkins-github--key
 cat ssh-jenkins-github--key.pub**
 ```
 
-### 7.3.1 Jenkins ssh public key 등록
+<b>7.3.1 Jenkins ssh public key 등록</b>
 
 - Dashboard → Jenkins 관리 → Security
 
@@ -509,22 +509,22 @@ security:
     - ID는 ssh key 설정할때 작성한 이름으로 작성한다. ex) ssh-jenkins-github--key
     - private key 붙여넣기
 
-### 7.4 Webhooks 설정
+<b>7.4 Webhooks 설정</b>
 
 - public key를 개발중인 Backend github repository쪽 settings → Deploy keys에 붙여넣어 키 설정.
 - ngrok을 이용하여 jenkins → {ngrok주소}:8080을 하면 jenkins를 접속할 수 있게 설정함.
     - {ngrok주소}/github-webhook/을 settings → Webhooks에 추가함.
 
-### 7.5 Jenkins CI/CD 사용
+<b>7.5 Jenkins CI/CD 사용</b>
 
-### 7.5.1. Jenkins Tools 설정
+<b>7.5.1. Jenkins Tools 설정</b>
 
 - java 설정
     - add JDK 클릭 후 Name → openJDK17, JAVA_HOME → /opt/java/openjdk 설정
 - Gradle
     - name → gradle, install automatically 체크
 
-### 7.6 Jenkins pipeline 구축
+<b>7.6 Jenkins pipeline 구축</b>
 
 - 빌드 → Docker image 생성 → Docker hub에 push
     - Docker hub관련 Credential 구축
@@ -587,6 +587,18 @@ pipeline {
     }
 }
 ```
+- gradle 'gradle': Gradle 빌드 도구를 사용하도록 설정.
+- (jdk 'openJDK17': OpenJDK 17을 사용하도록 지정)
+
+<b>Stage(Preparation)</b>
+- 필요한 도구들이 설치되어 있는지 확인
+- docker --version: Docker가 설치되어 있는지 확인하는 커맨드를 실행.
+
+<b>Stage(Source Build)</b>
+- 소스 코드를 체크아웃하고 빌드.
+- git branch: 'main', url: '${GITHUB_URL}': 지정된 GitHub URL에서 메인 브랜치의 최신 소스 코드를 체크아웃.
+- chmod +x ./gradlew: Gradle wrapper 파일에 실행 권한을 부여.
+- ./gradlew clean build -P jasypt.encryptor.password=itty: 소스 코드를 빌드.(-P jasypt.encryptor.password=itty로 빌드 중 필요한 암호화 키를 제공)
 
 ### Build가 제대로 되지 않았을 때
 
@@ -611,7 +623,7 @@ pipeline {
 - 재시도: 일시적인 문제로 인해 실패했을 수 있으므로, 문제를 수정한 후 빌드 또는 배포를 재시도.<br><br>
 </details>
 
-### Jenkins를 통한 Pipeline 구축, CI/CD
+### Jenkins를 통한 Pipeline 구축, CI/CD(요약)
 
 <details>
 	<summary><b>Jenkins Schedule 및 구현</b></summary>
@@ -636,74 +648,6 @@ pipeline {
 6. 모니터링 및 알림<br>
 - 모니터링 도구 통합: Prometheus, Grafana 등을 사용하여 애플리케이션의 성능을 실시간으로 모니터링.<br>
 - 알림 설정: Slack, 이메일 등을 통해 이슈에 대해서 알림을 받아볼 수 있음.<br>
-
-<hr>
-
-```
-pipeline {
-    agent any
-
-    tools {
-        gradle 'gradle'
-        jdk 'openJDK17'
-    }
-
-    environment {
-        DOCKERHUB_USERNAME = 'eodud3196'
-        GITHUB_URL = 'https://github.com/1oT-Itty/itty-spring-backend.git'
-    }
-
-    stages {
-        stage('Preparation') {
-            steps {
-                script {
-                    sh 'docker --version' // Docker가 설치되어 있는지 확인
-                }
-            }
-        }
-        stage('Source Build') {
-            steps {
-                // 소스파일 체크아웃
-                git branch: 'main', url: 'https://github.com/1oT-Itty/itty-spring-backend.git'
-
-                // 소스 빌드
-                // 755권한 필요 (윈도우에서 Git으로 소스 업로드시 권한은 644)
-                sh "chmod +x ./gradlew"
-                sh "./gradlew clean build -P jasypt.encryptor.password=itty"
-            }
-        }
-        stage('Container Build') {
-            steps {	
-    
-                // jar 파일 복사
-                sh "cp ./build/libs/*.jar ."
-    
-                // 컨테이너 빌드 및 업로드
-                sh "docker build -t ${DOCKERHUB_USERNAME}/backend-server:latest ."
-
-                // docker hub로 push
-                withCredentials([usernamePassword(credentialsId: 'DOCKERHUB_PASSWORD', usernameVariable: 'DOCKERHUB_USER', passwordVariable: 'DOCKERHUB_PASS')]) {
-                    sh "echo $DOCKERHUB_PASS | docker login --username $DOCKERHUB_USER --password-stdin"
-                    sh "docker push ${DOCKERHUB_USERNAME}/backend-server:latest"
-                }
-            }
-        }
-    }
-}
-```
-
-- gradle 'gradle': Gradle 빌드 도구를 사용하도록 설정.
-- (jdk 'openJDK17': OpenJDK 17을 사용하도록 지정)
-
-<b>Stage(Preparation)</b>
-- 필요한 도구들이 설치되어 있는지 확인
-- docker --version: Docker가 설치되어 있는지 확인하는 커맨드를 실행.
-
-<b>Stage(Source Build)</b>
-- 소스 코드를 체크아웃하고 빌드.
-- git branch: 'main', url: '${GITHUB_URL}': 지정된 GitHub URL에서 메인 브랜치의 최신 소스 코드를 체크아웃.
-- chmod +x ./gradlew: Gradle wrapper 파일에 실행 권한을 부여.
-- ./gradlew clean build -P jasypt.encryptor.password=itty: 소스 코드를 빌드.(-P jasypt.encryptor.password=itty로 빌드 중 필요한 암호화 키를 제공)
 
 </details>
 
