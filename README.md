@@ -653,9 +653,13 @@ pipeline {
 	</p>
  ➡️ Main Page ( Guide-scroll )<br>
         <p align="center">
-	<img src=""/>
+	<img src="https://github.com/mini-xi/ittyreadme/blob/3414c001a22c0a4061e196f3714b1ca7c818a960/img/test_itty_mainpageservicescroll.gif"/>
 	</p>
- ➡️ Main Page ( Service-scroll )( Click event_ To Trend Board )
+ ➡️ Main Page ( Service-scroll )
+        <p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/3414c001a22c0a4061e196f3714b1ca7c818a960/img/test_itty_mainpagetoTrend.gif"/>
+	</p>
+ ➡️ Main Page ( Click event-To Trend Board )
          <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_eventboard.gif"/>
 	</p>
@@ -681,21 +685,29 @@ pipeline {
 	</p>
  ➡️ Article Comment Like
            <p align="center">
-	<img src=""/>
+	<img src="https://github.com/mini-xi/ittyreadme/blob/3414c001a22c0a4061e196f3714b1ca7c818a960/img/test_itty_mainpagetoProfile.gif"/>
 	</p>
- ➡️ 
+ ➡️ Mainpage to Profile
            <p align="center">
-	<img src=""/>
+	<img src="https://github.com/mini-xi/ittyreadme/blob/3414c001a22c0a4061e196f3714b1ca7c818a960/img/test_itty_profileCategory.gif"/>
 	</p>
- ➡️ 
+ ➡️ Profile Category
            <p align="center">
-	<img src=""/>
+	<img src="https://github.com/mini-xi/ittyreadme/blob/3414c001a22c0a4061e196f3714b1ca7c818a960/img/test_itty_userPost.gif"/>
 	</p>
- ➡️ 
+ ➡️ User Posted View
            <p align="center">
-	<img src=""/>
+	<img src="https://github.com/mini-xi/ittyreadme/blob/c362c794b2efe02ce9006cb58a208ab1416f5630/img/test_itty_userReply.gif"/>
 	</p>
- ➡️ 
+ ➡️ User Replied View
+            <p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/3414c001a22c0a4061e196f3714b1ca7c818a960/img/test_itty_modifyUser.gif"/>
+	</p>
+ ➡️ Modify User
+             <p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/3414c001a22c0a4061e196f3714b1ca7c818a960/img/test_itty_modifyUserComplete.gif"/>
+	</p>
+ ➡️ Modify User Complete
 	
 </details>
 
