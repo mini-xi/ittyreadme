@@ -150,12 +150,12 @@ docker push eodud3196/backend_server
 
 - deployment 파일 생성
     
-    [itty-project-deployment.yml](https://github.com/mini-xi/ittyreadme/blob/28776c89cbe72a17e28dd48849f3ffcc1f8448af/yml/itty-project-deployment.yml)
+    [itty-project-deployment.yml](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/itty-project-deployment.yml)
 
 
 - service 파일 생성
     
-    [itty-project-service.yml](https://github.com/mini-xi/ittyreadme/blob/9476400bf8ca15dc2a479e0bf24f1f7c288f087e/yml/itty-project-service.yml)
+    [itty-project-service.yml](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/itty-project-service.yml)
   
 
 <b> 1.8. kubelet에 deployment 적용하여 Pod 생성(컨테이너 배포)</b><br>
@@ -231,13 +231,13 @@ Cluster: 여러 노드(물리적 또는 가상의 서버)로 구성된 쿠버네
 - redis 디렉토리 생성
 - Kubernetes 실행을 위한 yml 파일 작성
     
-    [redis-configmap.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/redis-configmap.yml)
+    [redis-configmap.yml](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/redis-configmap.yml)
     
     - 애플리케이션 설정을 저장하는 데 사용되는 리소스
     
-    [redis-dep.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/redis-dep.yml)
+    [redis-pod.yml](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/redis-pod.yml)
     
-    [redis-svc.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/redis-svc.yml)
+    [redis-svc.yml](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/redis-svc.yml)
     
     ```yaml
       externalIPs:
@@ -263,13 +263,17 @@ kubectl apply -f redis/
 
 <b> 4.1.1 Dockerfile 생성</b><br>
 
-[Dockerfile](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/Dockerfile.txt)
+Jenkins :<br>
+[Dockerfile](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/Dockerfile)
+
+DB :<br>
+[Dockerfile2](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/Dockerfile%202)
 
 - 해당 파일은 MariaDB 컨테이너 이미지를 사용하여 데이터베이스를 초기화하는 작업을 수행함.
 - 초기화 작업은 빌더 스테이지에서 수행되며, 그 결과로 초기화된 데이터베이스 디렉토리가 생성됨
 - 다음 초기화된 데이터베이스 디렉토리를 기본 MariaDB 이미지로 복사하여 최종 이미지를 생성
 
-[setup.sql](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/setup.sql)
+[setup.sql](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/setup.sql)
 
 - 해당 파일은 itty Database DDL문으로 Docker 이미지 초기 세팅할 DB이다.
 
@@ -290,13 +294,13 @@ docker push {DB image name}
 - db 디렉토리 생성
 - Kubernetes 실행을 위한 yml 파일 작성
     
-    [itty-db-volume.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/itty-db-volume.yml)
+    [itty-db-volume.yml](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/itty-db-volume.yml)
     
     - 애플리케이션 설정을 저장하는 데 사용되는 리소스
     
-    [itty-db-deployment.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/itty-db-deployment.yml)
+    [itty-db-deployment.yml](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/itty-db-deployment.yml)
     
-    [itty-db-service.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/itty-db-service.yml)
+    [itty-db-service.yml](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/itty-db-service.yml)
     
     ```yaml
       externalIPs:
@@ -328,7 +332,7 @@ kubectl apply -f db/
 - Prometheus 디렉토리 생성
 - Kubernetes 실행을 위한 yml 파일 작성
     
-    [prometheus-configmap.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/prometheus-configmap.yml)
+    [prometheus-configmap.yml](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/prometheus-configmap.yml)
     
     - 현재 이 시스템에서는 Backend와 Jenkins Server 모니터링을 진행함.
     
@@ -350,9 +354,9 @@ kubectl apply -f db/
     - 해당 IP를 prometheus.static_configs.targes 쪽에 port 8888로 수정함.
     - jenkins 서버 모니터링을 위해 imac위에서 동작하고 있는 jenkins를 ngrok을 통해 주소를 Backend서버 targets 수정한것 처럼 수정한다.
     
-    [prometheus-service.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/prometheus-service.yml)
+    [prometheus-service.yml](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/prometheus-service.yml)
     
-    [prometheus-deployment.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/prometheus-deployment.yml)
+    [prometheus-deployment.yml](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/prometheus-deployment.yml)
     
     - service 파일에 다음과 같이 IP를 설정함
     - Backend Server에서 192.168.0.31:6379를 이용하여 서로 통신 가능 하게 적용
@@ -384,13 +388,13 @@ kubectl apply -f prometheus/
 - grafana 디렉토리 생성
 - Kubernetes 실행을 위한 yml 파일 작성
     
-    [grafana-volume.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/grafana-volume.yml)
+    [grafana-volume.yml](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/grafana-volume.yml)
     
     - 애플리케이션 설정을 저장하는 데 사용되는 리소스
     
-    [grafana-deployment.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/grafana-deployment.yml)
+    [grafana-deployment.yml](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/grafana-deployment.yml)
     
-    [grafana-service.yml](https://github.com/mini-xi/ittyreadme/blob/8804304fa6da4cb7396dd9412f23e9c0670c9c2e/yml/grafana-service.yml)
+    [grafana-service.yml](https://github.com/mini-xi/ittyreadme/blob/d8ae941750f53d7537c904012273f5476bf30c9c/yml/grafana-service.yml)
     
 
 <b> 6.2. Kubernetes Redis 실행</b><br>
