@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: itty-db-deployment
+  labels:
+    app: itty-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: itty-db
+  template:
+    metadata:
+      labels:
+        app: itty-db
+    spec:
+      containers:
+      - name: itty-db
+        image: null00007/db-server:latest
+        ports:
+        - containerPort: 3306
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: "root"
+      volumes:
+      - name: itty-db-pvc
+        persistentVolumeClaim:
+          claimName: itty-db-pvc
