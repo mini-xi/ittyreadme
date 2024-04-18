@@ -67,7 +67,7 @@
 <hr>
 
 ## 📋 Architecture
-<img src="https://github.com/mini-xi/ittyreadme/blob/0ca77d608026ada8e5645f3aed138c95a69ceb3d/img/architectureItty.png"/>
+<img src="https://github.com/mini-xi/ittyreadme/blob/e3dbf698fe21f05ddf398fb960f433c407b7ea0b/img/itty_architecture.png"/>
 <br>
 
 ### Jasypt
