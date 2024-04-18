@@ -628,83 +628,83 @@ pipeline {
 
 <details>
 	<summary><b>Test</b></summary>
-- Sign Up
+1. Sign Up
 	<p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/d497ac1a0de5f3005c1f198ec3ef743c81736a03/img/test_itty_signup.gif"/>
 	</p>
-- Login
+2. Login
         <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/d497ac1a0de5f3005c1f198ec3ef743c81736a03/img/test_itty_login.gif"/>
 	</p>
-- Logout
+3. Logout
          <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/d497ac1a0de5f3005c1f198ec3ef743c81736a03/img/test_itty_logout.gif"/>
 	</p>
-- Sign Out
+4. Sign Out
          <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/d497ac1a0de5f3005c1f198ec3ef743c81736a03/img/test_itty_signout.gif"/>
 	</p>
-- Main Page
+5. Main Page
          <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_mainpage.gif"/>
 	</p>
-- Main Page ( Guide-scroll )
+6. Main Page ( Guide-scroll )
          <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_mainguidescroll.gif"/>
 	</p>
-- Main Page ( Service-scroll )
+7. Main Page ( Service-scroll )
         <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/3414c001a22c0a4061e196f3714b1ca7c818a960/img/test_itty_mainpageservicescroll.gif"/>
 	</p>
-- Main Page( Click event-To Trend Board)
+8. Main Page( Click event-To Trend Board)
         <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/3414c001a22c0a4061e196f3714b1ca7c818a960/img/test_itty_mainpagetoTrend.gif"/>
 	</p>
-- Event Page
+9. Event Page
          <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_eventboard.gif"/>
 	</p>
-- Trend Board
+10. Trend Board
         <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_trendboard.gif"/>
 	</p>
-- Article Board( Free Board )
+11. Article Board( Free Board )
         <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_article.gif"/>
 	</p>
-- Article View
+12. Article View
         <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_article_view.gif"/>
 	</p>
-- Article Comment
+13. Article Comment
         <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_freeboard_comment.gif"/>
 	</p>
-- Article Comment Like
+14. Article Comment Like
         <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_commentlike.gif"/>
 	</p>
-- Mainpage to Profile
+15. Mainpage to Profile
         <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/3414c001a22c0a4061e196f3714b1ca7c818a960/img/test_itty_mainpagetoProfile.gif"/>
 	</p>
-- Profile Category
+16. Profile Category
         <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/3414c001a22c0a4061e196f3714b1ca7c818a960/img/test_itty_profileCategory.gif"/>
 	</p>
-- User Posted View
+17. User Posted View
         <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/3414c001a22c0a4061e196f3714b1ca7c818a960/img/test_itty_userPost.gif"/>
 	</p>
-- User Replied View
+18. User Replied View
         <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/c362c794b2efe02ce9006cb58a208ab1416f5630/img/test_itty_userReply.gif"/>
 	</p>
-- Modify User
+19. Modify User
             <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/3414c001a22c0a4061e196f3714b1ca7c818a960/img/test_itty_modifyUser.gif"/>
 	</p>
-- Modify User Complete
+20. Modify User Complete
         <p align="center">
 	<img src="https://github.com/mini-xi/ittyreadme/blob/3414c001a22c0a4061e196f3714b1ca7c818a960/img/test_itty_modifyUserComplete.gif"/>
 	</p>
