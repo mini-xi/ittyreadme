@@ -626,7 +626,78 @@ pipeline {
 
 ## 9. 테스트
 
-
+<details>
+	<summary><b>Test</b></summary>
+	<p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/d497ac1a0de5f3005c1f198ec3ef743c81736a03/img/test_itty_signup.gif"/>
+	</p>
+ ➡️ Sign Up<br>
+        <p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/d497ac1a0de5f3005c1f198ec3ef743c81736a03/img/test_itty_login.gif"/>
+	</p>
+ ➡️ Login<br>
+         <p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/d497ac1a0de5f3005c1f198ec3ef743c81736a03/img/test_itty_logout.gif"/>
+	</p>
+ ➡️ Logout<br>
+         <p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/d497ac1a0de5f3005c1f198ec3ef743c81736a03/img/test_itty_signout.gif"/>
+	</p>
+ ➡️ Sign Out<br>
+         <p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_mainpage.gif"/>
+	</p>
+ ➡️ Main Page<br>
+         <p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_mainguidescroll.gif"/>
+	</p>
+ ➡️ Main Page ( Guide-scroll )<br>
+        <p align="center">
+	<img src=""/>
+	</p>
+ ➡️ Main Page ( Service-scroll )( Click event_ To Trend Board )
+         <p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_eventboard.gif"/>
+	</p>
+ ➡️ Event Page<br>
+          <p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_trendboard.gif"/>
+	</p>
+ ➡️ Trend Board<br>
+           <p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_article.gif"/>
+	</p>
+ ➡️ Article Board( Free Board )
+           <p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_article_view.gif"/>
+	</p>
+ ➡️ Article View
+           <p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_freeboard_comment.gif"/>
+	</p>
+ ➡️ Article Comment
+           <p align="center">
+	<img src="https://github.com/mini-xi/ittyreadme/blob/bc1f3158f8507769d386a5946aa2297f889a5ae6/img/test_itty_commentlike.gif"/>
+	</p>
+ ➡️ Article Comment Like
+           <p align="center">
+	<img src=""/>
+	</p>
+ ➡️ 
+           <p align="center">
+	<img src=""/>
+	</p>
+ ➡️ 
+           <p align="center">
+	<img src=""/>
+	</p>
+ ➡️ 
+           <p align="center">
+	<img src=""/>
+	</p>
+ ➡️ 
+	
+</details>
 
 
 ## ⚙️ Docker / Kubernetes
