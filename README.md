@@ -11,7 +11,7 @@
 <img src="https://github.com/mini-xi/ittyreadme/blob/84a151c2c6045c0c95a7876118bc82d34bf03b18/img/1ot.png" height=175>
 </figure>
 </div>
-
+  
 ###  팀원 :
  
 [<img src="https://img.shields.io/badge/Github-Link-FFE482?logo=Github">](https://github.com/mini-xi) <strong>&nbsp;&nbsp;배성민</strong> <br>
